@@ -3,7 +3,7 @@ import { Alert } from "reactstrap";
 import { useParams } from "react-router-dom";
 import { LoadingSpinner } from "../Components/LoadingSpinner";
 import { SubmissionService } from "../services/SubmissionService";
-import SubmissionTable from "../components/SubmissionTable";
+import SubmissionTable from "../Components/SubmissionTable";
 
 const Submission = () => {
   const { id } = useParams();

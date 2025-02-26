@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Alert, Button, Container, Row, Col } from "reactstrap";
 import { LoadingSpinner } from "../Components/LoadingSpinner";
-import FormsTable from "../components/FormsTable";
+import FormsTable from "../Components/FormsTable";
 import FormsService from "../services/FormService";
 
 const Home = () => {

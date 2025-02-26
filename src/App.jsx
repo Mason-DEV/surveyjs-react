@@ -1,8 +1,8 @@
 import React from "react";
 import { ErrorBoundary } from "react-error-boundary";
-import ErrorFallback from "./components/ErrorFallback";
+import ErrorFallback from "./Components/ErrorFallback";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Header from "./components/Header";
+import Header from "./Components/Header";
 import PropertyEditor from "./pages/PropertyEditor";
 import Home from "./pages/Home";
 import Form from "./pages/Form";

@@ -5,7 +5,7 @@ import { SurveyCreator, SurveyCreatorComponent } from "survey-creator-react";
 import { CREATOR_OPTIONS } from "../util/config";
 import { LoadingSpinner } from "../Components/LoadingSpinner";
 import FormsService from "../services/FormService";
-import "../styles/builder.css";
+import "@styles/builder.css";
 import "survey-core/survey.i18n.js";
 import "survey-creator-core/survey-creator-core.i18n.js";
 

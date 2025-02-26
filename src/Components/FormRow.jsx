@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Badge, Button } from "reactstrap";
 import { SubmissionService } from "../services/SubmissionService";
+import JSONModal from "./JSONModal";
 
 const FormRow = ({ form, id, onDelete }) => {
   const navigate = useNavigate();
@@ -31,7 +32,6 @@ const FormRow = ({ form, id, onDelete }) => {
   const handleRun = async (id) => {
     try {
       const response = await SubmissionService.createSubmission(id);
-      console.log("Created submission:", response);
       navigate(`/form/${response.submissionId}`);
     } catch (error) {
       console.error("Error creating submission:", error);
@@ -63,6 +63,9 @@ const FormRow = ({ form, id, onDelete }) => {
               {submissionCount}
             </Badge>
           </Button>
+        </td>
+        <td>
+          <JSONModal data={form} />
         </td>
         <td>
           <Button

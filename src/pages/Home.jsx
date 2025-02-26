@@ -3,6 +3,7 @@ import { Alert, Button, Container, Row, Col } from "reactstrap";
 import { LoadingSpinner } from "../Components/LoadingSpinner";
 import FormsTable from "../Components/FormsTable";
 import FormsService from "../services/FormService";
+import JSONModal from "../Components/JSONModal";
 
 const Home = () => {
   const [isLoading, setLoading] = useState(true);

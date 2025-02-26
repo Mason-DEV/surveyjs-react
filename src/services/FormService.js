@@ -20,7 +20,7 @@ class FormsService {
   }
 
   static async updateForm(id, formData) {
-    const { data } = await axios.put(`${BASE_PATH}/${id}`, formData);
+    const { data } = await axios.post(`${BASE_PATH}/${id}`, formData);
     return data;
   }
 

@@ -23,7 +23,6 @@ const Form = () => {
   const fetchData = async () => {
     try {
       const submissionData = await SubmissionService.getSubmission(id);
-      console.log(submissionData);
       const formData = await FormsService.getForm(
         submissionData.formDocumentID
       );
@@ -39,8 +38,6 @@ const Form = () => {
       surveyModel.onCurrentPageChanged.add(saveSurveyData);
       // Save on survey complete callback
       surveyModel.onComplete.add(saveSurveyData);
-
-      console.log(surveyModel.data);
 
       setSurveyModel(surveyModel);
     } catch (error) {

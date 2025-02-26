@@ -1,0 +1,14 @@
+.home-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    top: 50px;
+    width: 100%;  
+    height:calc(100% - 50px);
+  }
+  
+  .home-middle-row {
+    overflow-y: auto; 
+    flex: 1;
+  }

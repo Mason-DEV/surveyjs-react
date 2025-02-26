@@ -1,0 +1,27 @@
+@import "survey-core/defaultV2.min.css";
+@import "survey-creator-core/survey-creator-core.css";
+
+
+ .builder-container {
+    position: relative;
+    /* Adjust based on your navbar height */
+    height: calc(100vh - 56px); 
+    padding: 0;
+  }
+  
+  .survey-creator-wrapper {
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .action-button-wrapper {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+  
+  /* Override SurveyJS creator styles to ensure full height */
+  .survey-creator-wrapper :global(.svc-creator) {
+    height: 100%;
+  }

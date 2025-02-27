@@ -37,7 +37,7 @@ const SubmissionService = {
    * @returns {Promise<object>} The updated submission
    */
   updateSubmission: async (submissionID, json) => {
-    const { data } = await axios.put(
+    const { data } = await axios.post(
       `${BASE_PATH}/update/${submissionID}`,
       json
     );

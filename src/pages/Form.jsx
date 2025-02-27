@@ -30,6 +30,9 @@ const Form = () => {
       const surveyModel = new Model(formData);
       if (submissionData) {
         surveyModel.data = submissionData;
+        if (submissionData.isCompleted) {
+          surveyModel.mode = "display";
+        }
       }
 
       // Save on any question value change callback
